@@ -11,12 +11,12 @@ public class CameraOperatorController : MonoBehaviour {
     private int setInvYax;
     private ArmController arm;
     private Follow follow;
-    private Camera camera;
+    private Camera mainCamera;
 
     void Start()
     {
         arm = gameObject.GetComponentInChildren<ArmController>();
-        camera = gameObject.GetComponentInChildren<Camera>();
+        mainCamera = gameObject.GetComponentInChildren<Camera>();
         follow = gameObject.GetComponent<Follow>();
         handleSettings(invertYaxis);
     }
@@ -63,7 +63,7 @@ public class CameraOperatorController : MonoBehaviour {
         }
 
         // The camera should not follow if the character is facing the camera
-        Vector3 diff = target.transform.rotation.eulerAngles - camera.transform.rotation.eulerAngles;
+        Vector3 diff = target.transform.rotation.eulerAngles - mainCamera.transform.rotation.eulerAngles;
         float angle = Mathf.Abs(diff.y);
 
         float range = 30f;
@@ -85,7 +85,7 @@ public class CameraOperatorController : MonoBehaviour {
     RaycastHit[] DetectCollisions()
     {
         Vector3 targetPosition = follow.target.transform.position;
-        Vector3 cameraPosition = camera.transform.position;
+        Vector3 cameraPosition = mainCamera.transform.position;
         return Physics.RaycastAll(targetPosition, cameraPosition - targetPosition, arm.optimalRadius);
     }
 
