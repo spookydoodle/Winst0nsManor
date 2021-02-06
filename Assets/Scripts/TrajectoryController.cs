@@ -8,14 +8,14 @@ public class TrajectoryController : MonoBehaviour
     public Vector3? initialSpeed = null;
     public bool withGravity = false;
 
-    private LineRenderer renderer = null;
+    private LineRenderer lineRenderer = null;
     private static int nodesCount = 100;
     private static int projectionTime = 1;  // project 1 second of movement
     private bool shouldRecalculate = true;  // only recalculate if values have changed
 
     void Start()
     {
-        this.renderer = this.gameObject.GetComponent<LineRenderer>();
+        this.lineRenderer = this.gameObject.GetComponent<LineRenderer>();
     }
 
     void Update() {
@@ -41,8 +41,8 @@ public class TrajectoryController : MonoBehaviour
     private void UpdatePositions()
     {
         var positions = this.CalculatePositions();
-        this.renderer.positionCount = positions.Length;
-        this.renderer.SetPositions(positions);
+        this.lineRenderer.positionCount = positions.Length;
+        this.lineRenderer.SetPositions(positions);
     }
 
     private Vector3[] CalculatePositions()
