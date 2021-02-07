@@ -3,7 +3,22 @@ guid: f2a6b532be7a99145b237cb2570a90f5
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArrowBlack
+    second: {fileID: 2100000, guid: df572c40cc4a0244b83e532ed5b112e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ClockPlate
+    second: {fileID: 2100000, guid: 92a32b0ab3b10cd4db952cef9e4181e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodBrownClock
+    second: {fileID: 2100000, guid: 8c03d17506974ac418abb10b492c878b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

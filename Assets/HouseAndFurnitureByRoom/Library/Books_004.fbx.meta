@@ -3,7 +3,42 @@ guid: e558e8d3e28267a4698307ce8ead4041
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverBlack
+    second: {fileID: 2100000, guid: 341dba00ceff95c49a4a4d6f532a6c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverBlue
+    second: {fileID: 2100000, guid: 1d9415f30cd3cc64cbb8f305dc79a6c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverBlueDetail
+    second: {fileID: 2100000, guid: fedc9c6e06999aa41af974f424ec879f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverBrown
+    second: {fileID: 2100000, guid: 317c47e74e00fae46983325f5b59f063, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverGreen
+    second: {fileID: 2100000, guid: 9b7e207b0202bb24ba545ed06b493300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookCoverRed
+    second: {fileID: 2100000, guid: 1828b59fd45d6d34fbbfca4afe756daa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paper
+    second: {fileID: 2100000, guid: 950576819b68e8e4092d4f323a78322f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,22 @@ guid: 11050b54040c44441bc4d85ded297553
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMetal
+    second: {fileID: 2100000, guid: d2b54ff15683e9e468c02751921e90f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteTransparent
+    second: {fileID: 2100000, guid: d5d4e7665c4cac14ca820f54ad96d3df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodDoor
+    second: {fileID: 2100000, guid: 8a02351725fd82d4486700d2dcd1c893, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

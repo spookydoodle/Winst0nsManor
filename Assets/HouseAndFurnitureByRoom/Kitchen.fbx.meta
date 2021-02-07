@@ -3,7 +3,37 @@ guid: 810752b28ab791848847fb88b484ee3c
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TileBlackWhite
+    second: {fileID: 2100000, guid: 0351249f56f0573458cd9497bd827f47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TilesRed
+    second: {fileID: 2100000, guid: 5e0bab3fef896b84e95bb0ce2b662fe9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteFull
+    second: {fileID: 2100000, guid: 0c7f899014b896d4f97f8926a18b280a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 1a4c70a63905ef942943365dca078bb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteTransparent
+    second: {fileID: 2100000, guid: d5d4e7665c4cac14ca820f54ad96d3df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: 753a2f8dcd781a6499280c5ae236063f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
