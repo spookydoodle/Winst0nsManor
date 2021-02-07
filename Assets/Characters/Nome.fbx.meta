@@ -5,10 +5,13 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -8945691123924629249
-    second: Armature|Idle
+    second: NomeIdle
   - first:
       74: -7551964380084998518
     second: Armature|Run
+  - first:
+      74: 3887840544401503416
+    second: NomeRun
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -46,7 +49,65 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: NomeIdle
+      takeName: Armature|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: NomeRun
+      takeName: Armature|Run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -93,7 +154,82 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Nome(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Nome(Clone)
+      position: {x: 0.0000000022118911, y: 0.05206653, z: 0.00012434876}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1.4193473, y: 1.4193473, z: 1.4193473}
+    - name: MainBone
+      parentName: Armature
+      position: {x: -0.000028596833, y: 0.00038763834, z: 0.04628092}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine
+      parentName: MainBone
+      position: {x: -0, y: 0.02249999, z: -2.1208367e-12}
+      rotation: {x: -0.0000000011395409, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Spine
+      position: {x: -0, y: 0.08945636, z: 2.4138762e-11}
+      rotation: {x: 1.651935e-10, y: -2.4038818e-21, z: 1.4551915e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_end
+      parentName: Head
+      position: {x: -0, y: 0.27538782, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thigh.R
+      parentName: MainBone
+      position: {x: 0.015800742, y: -0.002952118, z: -0.00000053990357}
+      rotation: {x: 0.7071069, y: -0.00000009415695, z: -0.7071067, w: -0.000000094156974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg.R
+      parentName: Thigh.R
+      position: {x: 5.956089e-12, y: 0.039445847, z: 1.3493999e-10}
+      rotation: {x: 0.044183858, y: 0.7057244, z: -0.044183783, w: 0.7057256}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Foot.R
+      parentName: Leg.R
+      position: {x: 7.4397233e-10, y: 0.03590277, z: -1.6739249e-11}
+      rotation: {x: -0.0071072765, y: -0.68647873, z: 0.72706443, w: -0.0085900575}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000001}
+    - name: Foot.R_end
+      parentName: Foot.R
+      position: {x: -0, y: 0.019767191, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thigh.L
+      parentName: MainBone
+      position: {x: -0.01579293, y: -0.002952118, z: -0.00000053990357}
+      rotation: {x: 0.7071069, y: -0.00000009415695, z: -0.7071067, w: -0.000000094156974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg.L
+      parentName: Thigh.L
+      position: {x: 1.44575905e-11, y: 0.039445847, z: 1.3493999e-10}
+      rotation: {x: 0.044183858, y: 0.7057244, z: -0.044183783, w: 0.7057256}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Foot.L
+      parentName: Leg.L
+      position: {x: -0.0000000016402134, y: 0.03590277, z: -3.6800427e-11}
+      rotation: {x: -0.0071077235, y: -0.6864787, z: 0.7270645, w: -0.008589563}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: Foot.L_end
+      parentName: Foot.L
+      position: {x: -0, y: 0.019767191, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nome
+      parentName: Nome(Clone)
+      position: {x: -0, y: -0.0000000037252903, z: -0.000000003768946}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 0.9999999, z: 0.99999976}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -108,7 +244,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
